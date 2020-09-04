@@ -14,6 +14,14 @@ cups_flour = 2.75/48
 
 #Ask the user how many cookies they will be making
 num_cookies = int(input('How many cookies would you like to make? '))
+if num_cookies < 0:
+    print("Can't make negative cookies")
+    exit()
+if num_cookies is 0:
+    print('Cookies or death!')
+    exit()
+    
+
 
 #Conveniently deliver a precise amount of each
 #ingredient needed to make the user's amount
