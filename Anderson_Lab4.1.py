@@ -1,11 +1,11 @@
-budget = int(input('How much would you like to \
+budget = float(input('How much would you like to \
 spend this month?(Press 0 for total): $'))
 total = 0
-price = int(input('Enter the price: $'))
+price = float(input('Enter the price: $'))
 total += price
 
 while price != 0:
-    price = int(input('Enter the price(press 0 for total): $'))
+    price = float(input('Enter the price(press 0 for total): $'))
     total += price
     over_budget = total - budget
     under_budget = budget - total
