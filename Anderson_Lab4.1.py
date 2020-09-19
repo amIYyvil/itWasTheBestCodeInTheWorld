@@ -1,3 +1,11 @@
+# Written by Amy Anderson
+# This program is complete
+# This program collects a
+# user's budget and spending
+# and displays budget, total
+# spent, and whether the user
+# spent within their budget.
+
 budget = float(input('How much would you like to \
 spend this month?(Press 0 for total): $'))
 total = 0
