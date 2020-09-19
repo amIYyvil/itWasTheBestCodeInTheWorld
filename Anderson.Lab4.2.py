@@ -1,3 +1,10 @@
+# Written by Amy Anderson
+# This program is complete
+# This program calculates
+# the amount the ocean
+# will have risen over the
+# next 25 years.
+
 RISE = 1.8
 
 print('Year', '\t','Rise (in millimeters')
