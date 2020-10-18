@@ -13,15 +13,17 @@ def main():
                 print(number)
         else:
             print('Error! Number should be between 1 and 500.')
-        outfile.close()            
+                   
                         
-    except IOError:
+    except IOError as e:
         print('Something went wrong when '\
               'opening the file.')
+        print(str(e))
     except ValueError:
         print('Error! Please enter a number between 1 and 500')
     except:
         print('An error has occurred!')
-    
+    finally:
+        outfile.close() 
             
 main()
