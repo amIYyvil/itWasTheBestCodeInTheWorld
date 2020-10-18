@@ -13,7 +13,7 @@ def main():
         infile = open('randnums.txt','r')
 
         for line in infile:
-            total += float(line)
+            total += int(line)
             number += 1
 
         print('The sum of your numbers '\
@@ -23,16 +23,16 @@ def main():
               ' numbers in this file.')
         print()
         print('The average of the numbers '+\
-              'is: ' + str(format(total/number,'.2f')))
+              'is: ' + (format(total/number,'.2f')))
         
         
 
     except IOError as e:
         print('ERROR! Cannot access file.')
-        print(str(e))
+        print(e)
     except ValueError as v:
         print('ERROR! Invalid value.')
-        print(str(v))
+        print(v)
     except Exception as E:
         print('An error has occurred')
         print(E)
