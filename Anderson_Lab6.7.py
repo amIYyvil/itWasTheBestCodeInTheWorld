@@ -2,11 +2,12 @@ def main():
     import random
     
     try:
-        outfile = open('randnums.txt','w')
+        
         num_range = int(input('How many random numbers (in range '\
                           '1-500) would you like to generate? '))
 
         if num_range >= 1 and num_range <= 500:
+            outfile = open('randnums.txt','w')
             for count in range(1,num_range+1):
                 number = random.randint(1,count)
                 outfile.write(str(number)+'\n')
